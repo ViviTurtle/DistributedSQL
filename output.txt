@@ -1,0 +1,905 @@
+
+F:\>set echo=off 
+
+F:\>rem TEST1.BAT - test driver for CS157B/CS167B project 
+
+F:\>rem Clean up 
+
+F:\>cl db.cpp 
+db.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE\xlocale(341): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE\exception(359): warning C4577: 'noexcept' used with no exception handling mode specified; termination on exception is not guaranteed. Specify /EHsc
+Microsoft (R) Incremental Linker Version 14.00.23918.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:db.exe 
+db.obj 
+
+F:\>del dbfile.bin *.tab *.bak? 
+
+F:\>rem ========================================================================================== 
+
+F:\>rem #01 Test setup - create table + insert data 
+
+F:\>db "create table class ( student char(12), gender char(1), exams int, quiz int, total int )" 
+CREATE TABLE statement
+
+F:\>rem ------------------------------------------------------------------------------------------ 
+
+F:\>rem #02 Insert 15 rows of data 
+
+F:\>db "insert into class values ('siu', 'M', 480, 80, 560)" 
+dbfile.bin size = 228
+INSERT statement
+class.tab size: 56. Number of Records: 1
+
+F:\>db "insert into class values ('Frank', 'M', 600, 100, 700)" 
+dbfile.bin size = 228
+INSERT statement
+class.tab size: 88. Number of Records: 2
+
+F:\>db "insert into class values ('Jordon', 'M', 450, 75, 525)" 
+dbfile.bin size = 228
+INSERT statement
+class.tab size: 120. Number of Records: 3
+
+F:\>db "insert into class values ('Jeff', 'M', 455, 60, 515)" 
+dbfile.bin size = 228
+INSERT statement
+class.tab size: 152. Number of Records: 4
+
+F:\>db "insert into class values ('Ying', 'F', 540, 85, 625)" 
+dbfile.bin size = 228
+INSERT statement
+class.tab size: 184. Number of Records: 5
+
+F:\>db "insert into class values ('David', 'M', 550, 83, 633)" 
+dbfile.bin size = 228
+INSERT statement
+class.tab size: 216. Number of Records: 6
+
+F:\>db "insert into class values ('euna', 'F', 460, 75, 535)" 
+dbfile.bin size = 228
+INSERT statement
+class.tab size: 248. Number of Records: 7
+
+F:\>db "insert into class values ('Victor', 'M', 475, 60, 535)" 
+dbfile.bin size = 228
+INSERT statement
+class.tab size: 280. Number of Records: 8
+
+F:\>db "insert into class values ('Bad1', 'F', 200, NULL, 220)" 
+dbfile.bin size = 228
+INSERT statement
+class.tab size: 312. Number of Records: 9
+
+F:\>db "insert into class values ('Linawati', 'F', 490, 86, 576)" 
+dbfile.bin size = 228
+INSERT statement
+class.tab size: 344. Number of Records: 10
+
+F:\>db "insert into class values ('Bad2', 'F', 210, NULL, 225)" 
+dbfile.bin size = 228
+INSERT statement
+class.tab size: 376. Number of Records: 11
+
+F:\>db "insert into class values ('Stephen', 'M', 520, 76, 596)" 
+dbfile.bin size = 228
+INSERT statement
+class.tab size: 408. Number of Records: 12
+
+F:\>db "insert into class values ('Parichart', 'F', 450, 76, 526)" 
+dbfile.bin size = 228
+INSERT statement
+class.tab size: 440. Number of Records: 13
+
+F:\>db "insert into class values ('Bad3', 'M', NULL, 15, 205)" 
+dbfile.bin size = 228
+INSERT statement
+class.tab size: 472. Number of Records: 14
+
+F:\>db "insert into class values ('Quoc', 'M', 500, 85, 585)" 
+dbfile.bin size = 228
+INSERT statement
+class.tab size: 504. Number of Records: 15
+
+F:\>rem ------------------------------------------------------------------------------------------ 
+
+F:\>rem #dir 
+
+F:\>dir
+ Volume in drive F is VBOX_Project
+ Volume Serial Number is 0000-0801
+
+ Directory of F:\
+
+05/15/2016  02:01 PM    <DIR>          p1p3
+04/12/2016  03:57 PM            43,008 p1.doc
+05/15/2016  02:03 PM               504 class.tab
+05/12/2016  11:58 AM             8,872 test2.bat
+05/12/2016  04:40 PM            78,113 db.cpp
+04/14/2016  12:49 PM                45 EmbeddedSQL.sublime-project
+05/12/2016  04:41 PM            20,287 p1p2.zip
+05/12/2016  06:03 PM            32,429 EmbeddedSQL.sublime-workspace
+05/15/2016  02:03 PM             3,666 output.txt
+05/15/2016  02:03 PM               228 dbfile.bin
+05/12/2016  04:41 PM    <DIR>          p1p2
+05/12/2016  03:54 PM               926 test.bat
+04/13/2016  12:27 PM    <DIR>          Output
+05/12/2016  03:23 PM             7,335 db.h
+05/15/2016  02:03 PM           147,910 db.obj
+05/15/2016  02:03 PM           243,712 db.exe
+05/10/2016  06:54 PM    <DIR>          db
+05/12/2016  03:57 PM    <DIR>          p1p1
+              13 File(s)        607,515 bytes
+               5 Dir(s)  46,949,548,032 bytes free
+
+F:\>rem ------------------------------------------------------------------------------------------ 
+
+F:\>rem #03 & #04 Simple select * & verify headings & verify NULL display with - 
+
+F:\>db "select * from class" 
+dbfile.bin size = 228
+SELECT statement
++----------------+----------------+----------------+----------------+----------------+
+|student         |gender          |exams           |quiz            |total           |
++----------------+----------------+----------------+----------------+----------------+
+|siu             |M               |             480|              80|             560|
+|Frank           |M               |             600|             100|             700|
+|Jordon          |M               |             450|              75|             525|
+|Jeff            |M               |             455|              60|             515|
+|Ying            |F               |             540|              85|             625|
+|David           |M               |             550|              83|             633|
+|euna            |F               |             460|              75|             535|
+|Victor          |M               |             475|              60|             535|
+|Bad1            |F               |             200|NULL            |             220|
+|Linawati        |F               |             490|              86|             576|
+|Bad2            |F               |             210|NULL            |             225|
+|Stephen         |M               |             520|              76|             596|
+|Parichart       |F               |             450|              76|             526|
+|Bad3            |M               |NULL            |              15|             205|
+|Quoc            |M               |             500|              85|             585|
++----------------+----------------+----------------+----------------+----------------+
+15 rows selected
+
+F:\>rem ------------------------------------------------------------------------------------------ 
+
+F:\>rem #05 Single row delete 
+
+F:\>rem
+
+F:\>db "delete from class where student = 'Bad3'" 
+dbfile.bin size = 228
+DELETE statement
+1 rows deleted
+
+F:\>db "select * from class" 
+dbfile.bin size = 228
+SELECT statement
++----------------+----------------+----------------+----------------+----------------+
+|student         |gender          |exams           |quiz            |total           |
++----------------+----------------+----------------+----------------+----------------+
+|siu             |M               |             480|              80|             560|
+|Frank           |M               |             600|             100|             700|
+|Jordon          |M               |             450|              75|             525|
+|Jeff            |M               |             455|              60|             515|
+|Ying            |F               |             540|              85|             625|
+|David           |M               |             550|              83|             633|
+|euna            |F               |             460|              75|             535|
+|Victor          |M               |             475|              60|             535|
+|Bad1            |F               |             200|NULL            |             220|
+|Linawati        |F               |             490|              86|             576|
+|Bad2            |F               |             210|NULL            |             225|
+|Stephen         |M               |             520|              76|             596|
+|Parichart       |F               |             450|              76|             526|
+|Quoc            |M               |             500|              85|             585|
++----------------+----------------+----------------+----------------+----------------+
+14 rows selected
+
+F:\>rem ------------------------------------------------------------------------------------------ 
+
+F:\>rem #06 Delete when 0 row matched 
+
+F:\>rem
+
+F:\>db "delete from class where student = 'Nobody'" 
+dbfile.bin size = 228
+DELETE statement
+0 rows deleted
+
+F:\>db "select * from class" 
+dbfile.bin size = 228
+SELECT statement
++----------------+----------------+----------------+----------------+----------------+
+|student         |gender          |exams           |quiz            |total           |
++----------------+----------------+----------------+----------------+----------------+
+|siu             |M               |             480|              80|             560|
+|Frank           |M               |             600|             100|             700|
+|Jordon          |M               |             450|              75|             525|
+|Jeff            |M               |             455|              60|             515|
+|Ying            |F               |             540|              85|             625|
+|David           |M               |             550|              83|             633|
+|euna            |F               |             460|              75|             535|
+|Victor          |M               |             475|              60|             535|
+|Bad1            |F               |             200|NULL            |             220|
+|Linawati        |F               |             490|              86|             576|
+|Bad2            |F               |             210|NULL            |             225|
+|Stephen         |M               |             520|              76|             596|
+|Parichart       |F               |             450|              76|             526|
+|Quoc            |M               |             500|              85|             585|
++----------------+----------------+----------------+----------------+----------------+
+14 rows selected
+
+F:\>rem ------------------------------------------------------------------------------------------ 
+
+F:\>rem #07 Multi-row delete, bad1 and bad2 should be deleted 
+
+F:\>rem
+
+F:\>db "delete from class where total < 250" 
+dbfile.bin size = 228
+DELETE statement
+2 rows deleted
+
+F:\>db "select * from class" 
+dbfile.bin size = 228
+SELECT statement
++----------------+----------------+----------------+----------------+----------------+
+|student         |gender          |exams           |quiz            |total           |
++----------------+----------------+----------------+----------------+----------------+
+|siu             |M               |             480|              80|             560|
+|Frank           |M               |             600|             100|             700|
+|Jordon          |M               |             450|              75|             525|
+|Jeff            |M               |             455|              60|             515|
+|Ying            |F               |             540|              85|             625|
+|David           |M               |             550|              83|             633|
+|euna            |F               |             460|              75|             535|
+|Victor          |M               |             475|              60|             535|
+|Linawati        |F               |             490|              86|             576|
+|Stephen         |M               |             520|              76|             596|
+|Parichart       |F               |             450|              76|             526|
+|Quoc            |M               |             500|              85|             585|
++----------------+----------------+----------------+----------------+----------------+
+12 rows selected
+
+F:\>rem ------------------------------------------------------------------------------------------ 
+
+F:\>rem #08 Single row update 
+
+F:\>rem
+
+F:\>db "update class set exams = 600 where student = 'David'" 
+dbfile.bin size = 228
+UPDATE TABLE statement
+1 rows updated
+
+F:\>db "select * from class" 
+dbfile.bin size = 228
+SELECT statement
++----------------+----------------+----------------+----------------+----------------+
+|student         |gender          |exams           |quiz            |total           |
++----------------+----------------+----------------+----------------+----------------+
+|siu             |M               |             480|              80|             560|
+|Frank           |M               |             600|             100|             700|
+|Jordon          |M               |             450|              75|             525|
+|Jeff            |M               |             455|              60|             515|
+|Ying            |F               |             540|              85|             625|
+|David           |M               |             600|              83|             633|
+|euna            |F               |             460|              75|             535|
+|Victor          |M               |             475|              60|             535|
+|Linawati        |F               |             490|              86|             576|
+|Stephen         |M               |             520|              76|             596|
+|Parichart       |F               |             450|              76|             526|
+|Quoc            |M               |             500|              85|             585|
++----------------+----------------+----------------+----------------+----------------+
+12 rows selected
+
+F:\>rem ------------------------------------------------------------------------------------------ 
+
+F:\>rem #09 Update with no row matched 
+
+F:\>rem
+
+F:\>db "update class set exams = 999 where student = 'Nobody'" 
+dbfile.bin size = 228
+UPDATE TABLE statement
+0 rows updated
+
+F:\>rem ------------------------------------------------------------------------------------------ 
+
+F:\>rem #10 Multi-row updates,  Jordan & Jeff are now 'F' 
+
+F:\>rem
+
+F:\>db "update class set gender = 'F' where total < 526 
+dbfile.bin size = 228
+UPDATE TABLE statement
+2 rows updated
+
+F:\>db "select * from class" 
+dbfile.bin size = 228
+SELECT statement
++----------------+----------------+----------------+----------------+----------------+
+|student         |gender          |exams           |quiz            |total           |
++----------------+----------------+----------------+----------------+----------------+
+|siu             |M               |             480|              80|             560|
+|Frank           |M               |             600|             100|             700|
+|Jordon          |F               |             450|              75|             525|
+|Jeff            |F               |             455|              60|             515|
+|Ying            |F               |             540|              85|             625|
+|David           |M               |             600|              83|             633|
+|euna            |F               |             460|              75|             535|
+|Victor          |M               |             475|              60|             535|
+|Linawati        |F               |             490|              86|             576|
+|Stephen         |M               |             520|              76|             596|
+|Parichart       |F               |             450|              76|             526|
+|Quoc            |M               |             500|              85|             585|
++----------------+----------------+----------------+----------------+----------------+
+12 rows selected
+
+F:\>rem ------------------------------------------------------------------------------------------ 
+
+F:\>rem #11 Single column select without WHERE clause 
+
+F:\>rem
+
+F:\>db "select student from class 
+dbfile.bin size = 228
+SELECT statement
++----------------+
+|student         |
++----------------+
+|siu             |
+|Frank           |
+|Jordon          |
+|Jeff            |
+|Ying            |
+|David           |
+|euna            |
+|Victor          |
+|Linawati        |
+|Stephen         |
+|Parichart       |
+|Quoc            |
++----------------+
+12 rows selected
+
+F:\>rem ------------------------------------------------------------------------------------------ 
+
+F:\>rem #12 Multi-column select without WHERE clause 
+
+F:\>rem
+
+F:\>db "select total, student from class 
+dbfile.bin size = 228
+SELECT statement
++----------------+----------------+
+|total           |student         |
++----------------+----------------+
+|             560|siu             |
+|             700|Frank           |
+|             525|Jordon          |
+|             515|Jeff            |
+|             625|Ying            |
+|             633|David           |
+|             535|euna            |
+|             535|Victor          |
+|             576|Linawati        |
+|             596|Stephen         |
+|             526|Parichart       |
+|             585|Quoc            |
++----------------+----------------+
+12 rows selected
+
+F:\>rem ------------------------------------------------------------------------------------------ 
+
+F:\>rem #13 Select with WHERE clause with a single condition 
+
+F:\>rem
+
+F:\>db "select * from class where total > 600" 
+dbfile.bin size = 228
+SELECT statement
++----------------+----------------+----------------+----------------+----------------+
+|student         |gender          |exams           |quiz            |total           |
++----------------+----------------+----------------+----------------+----------------+
+|Frank           |M               |             600|             100|             700|
+|Ying            |F               |             540|              85|             625|
+|David           |M               |             600|              83|             633|
++----------------+----------------+----------------+----------------+----------------+
+3 rows selected
+
+F:\>rem ------------------------------------------------------------------------------------------ 
+
+F:\>rem #14 Select with where clause and AND keyword 
+
+F:\>rem
+
+F:\>db "select * from class where total > 570 and gender = 'M'" 
+dbfile.bin size = 228
+SELECT statement
++----------------+----------------+----------------+----------------+----------------+
+|student         |gender          |exams           |quiz            |total           |
++----------------+----------------+----------------+----------------+----------------+
+|Frank           |M               |             600|             100|             700|
+|David           |M               |             600|              83|             633|
+|Stephen         |M               |             520|              76|             596|
+|Quoc            |M               |             500|              85|             585|
++----------------+----------------+----------------+----------------+----------------+
+4 rows selected
+
+F:\>rem ------------------------------------------------------------------------------------------ 
+
+F:\>rem #15 Select with where clause and OR keyword 
+
+F:\>rem
+
+F:\>db "select * from class where total > 570 or gender = 'F'" 
+dbfile.bin size = 228
+SELECT statement
++----------------+----------------+----------------+----------------+----------------+
+|student         |gender          |exams           |quiz            |total           |
++----------------+----------------+----------------+----------------+----------------+
+|Frank           |M               |             600|             100|             700|
+|Jordon          |F               |             450|              75|             525|
+|Jeff            |F               |             455|              60|             515|
+|Ying            |F               |             540|              85|             625|
+|David           |M               |             600|              83|             633|
+|euna            |F               |             460|              75|             535|
+|Linawati        |F               |             490|              86|             576|
+|Stephen         |M               |             520|              76|             596|
+|Parichart       |F               |             450|              76|             526|
+|Quoc            |M               |             500|              85|             585|
++----------------+----------------+----------------+----------------+----------------+
+10 rows selected
+
+F:\>db "select * from class where total > 600" 
+dbfile.bin size = 228
+SELECT statement
++----------------+----------------+----------------+----------------+----------------+
+|student         |gender          |exams           |quiz            |total           |
++----------------+----------------+----------------+----------------+----------------+
+|Frank           |M               |             600|             100|             700|
+|Ying            |F               |             540|              85|             625|
+|David           |M               |             600|              83|             633|
++----------------+----------------+----------------+----------------+----------------+
+3 rows selected
+
+F:\>rem ------------------------------------------------------------------------------------------ 
+
+F:\>rem #16 Select with ORDER BY clause 
+
+F:\>rem
+
+F:\>db "select student from class order by student" 
+dbfile.bin size = 228
+SELECT statement
++----------------+
+|student         |
++----------------+
+
+Error in the string: order
+rc=-199
+
+F:\>db "select * from class order by total desc" 
+dbfile.bin size = 228
+SELECT statement
++----------------+----------------+----------------+----------------+----------------+
+|student         |gender          |exams           |quiz            |total           |
++----------------+----------------+----------------+----------------+----------------+
+
+Error in the string: order
+rc=-199
+
+F:\>rem ------------------------------------------------------------------------------------------ 
+
+F:\>rem #17 Select with WHERE and ORDER BY clauses 
+
+F:\>rem
+
+F:\>db "select * from class where total > 570 order by total" 
+dbfile.bin size = 228
+SELECT statement
++----------------+----------------+----------------+----------------+----------------+
+|student         |gender          |exams           |quiz            |total           |
++----------------+----------------+----------------+----------------+----------------+
+|Frank           |M               |             600|             100|             700|
+|Ying            |F               |             540|              85|             625|
+|David           |M               |             600|              83|             633|
+|Linawati        |F               |             490|              86|             576|
+|Stephen         |M               |             520|              76|             596|
+|Quoc            |M               |             500|              85|             585|
++----------------+----------------+----------------+----------------+----------------+
+6 rows selected
+
+F:\>rem ------------------------------------------------------------------------------------------ 
+
+F:\>rem #18 Select SUM() 
+
+F:\>rem
+
+F:\>db "select SUM(quiz) from class" 
+dbfile.bin size = 228
+SELECT statement
++----------------+
+|Sum             |
++----------------+
+|             941|
++----------------+
+1 row selected
+
+F:\>rem ------------------------------------------------------------------------------------------ 
+
+F:\>rem #19 Select SUM() with where clause 
+
+F:\>rem
+
+F:\>db "select SUM(total) from class where total > 600" 
+dbfile.bin size = 228
+SELECT statement
++----------------+
+|Sum             |
++----------------+
+|            1958|
++----------------+
+1 row selected
+
+F:\>rem ------------------------------------------------------------------------------------------ 
+
+F:\>rem #20 Select AVG() 
+
+F:\>rem
+
+F:\>db "select AVG(quiz) from class" 
+dbfile.bin size = 228
+SELECT statement
++----------------+
+|Average         |
++----------------+
+|              78|
++----------------+
+1 row selected
+
+F:\>rem ------------------------------------------------------------------------------------------ 
+
+F:\>rem #21 Select AVG() with where clause 
+
+F:\>rem
+
+F:\>db "select AVG(total) from class where total > 600" 
+dbfile.bin size = 228
+SELECT statement
++----------------+
+|Average         |
++----------------+
+|             652|
++----------------+
+1 row selected
+
+F:\>rem ------------------------------------------------------------------------------------------ 
+
+F:\>rem #22 Select COUNT() 
+
+F:\>rem
+
+F:\>db "select COUNT(*) from class" 
+dbfile.bin size = 228
+SELECT statement
+
+Error in the string: *
+rc=-395
+
+F:\>rem ------------------------------------------------------------------------------------------ 
+
+F:\>rem #23 Select COUNT() with where clause 
+
+F:\>rem
+
+F:\>db "select COUNT(total) from class where total > 600" 
+dbfile.bin size = 228
+SELECT statement
++----------------+
+|Count           |
++----------------+
+|               3|
++----------------+
+1 row selected
+
+F:\>rem ------------------------------------------------------------------------------------------ 
+
+F:\>rem #24 Test SUM(), AVG() when there are NULLs. 
+
+F:\>rem
+
+F:\>db "select * from class" 
+dbfile.bin size = 228
+SELECT statement
++----------------+----------------+----------------+----------------+----------------+
+|student         |gender          |exams           |quiz            |total           |
++----------------+----------------+----------------+----------------+----------------+
+|siu             |M               |             480|              80|             560|
+|Frank           |M               |             600|             100|             700|
+|Jordon          |F               |             450|              75|             525|
+|Jeff            |F               |             455|              60|             515|
+|Ying            |F               |             540|              85|             625|
+|David           |M               |             600|              83|             633|
+|euna            |F               |             460|              75|             535|
+|Victor          |M               |             475|              60|             535|
+|Linawati        |F               |             490|              86|             576|
+|Stephen         |M               |             520|              76|             596|
+|Parichart       |F               |             450|              76|             526|
+|Quoc            |M               |             500|              85|             585|
++----------------+----------------+----------------+----------------+----------------+
+12 rows selected
+
+F:\>db "update class set exams = NULL where student = 'David'"  
+dbfile.bin size = 228
+UPDATE TABLE statement
+1 rows updated
+
+F:\>db "update class set quiz = NULL where student = 'Stephen'"  
+dbfile.bin size = 228
+UPDATE TABLE statement
+1 rows updated
+
+F:\>db "select avg(exams) from class" 
+dbfile.bin size = 228
+SELECT statement
++----------------+
+|Average         |
++----------------+
+|             451|
++----------------+
+1 row selected
+
+F:\>db "select sum(quiz) from class" 
+dbfile.bin size = 228
+SELECT statement
++----------------+
+|Sum             |
++----------------+
+|             865|
++----------------+
+1 row selected
+
+F:\>rem ------------------------------------------------------------------------------------------ 
+
+F:\>rem #25 Test COUNT(*), COUNT(Quiz_Total) when there are NULLs. 
+
+F:\>rem
+
+F:\>db "select COUNT(*) from class" 
+dbfile.bin size = 228
+SELECT statement
+
+Error in the string: *
+rc=-395
+
+F:\>db "select COUNT(exams) from class" 
+dbfile.bin size = 228
+SELECT statement
++----------------+
+|Count           |
++----------------+
+|              12|
++----------------+
+1 row selected
+
+F:\>rem ========================================================================================== 
+
+F:\>rem Error Testing Section 
+
+F:\>rem ------------------------------------------------------------------------------------------ 
+
+F:\>rem Setup the table 
+
+F:\>db "create table test (col1 char(10), col2 int, col3 int not null)" 
+dbfile.bin size = 228
+CREATE TABLE statement
+
+F:\>db "insert into test values ( 'one', 1, 11 )" 
+dbfile.bin size = 372
+INSERT statement
+test.tab size: 48. Number of Records: 1
+
+F:\>db "insert into test values ( 'two', 2, 22 )" 
+dbfile.bin size = 372
+INSERT statement
+test.tab size: 72. Number of Records: 2
+
+F:\>db "select * from test" 
+dbfile.bin size = 372
+SELECT statement
++----------------+----------------+----------------+
+|col1            |col2            |col3            |
++----------------+----------------+----------------+
+|one             |               1|              11|
+|two             |               2|              22|
++----------------+----------------+----------------+
+2 rows selected
+
+F:\>rem ------------------------------------------------------------------------------------------ 
+
+F:\>rem #26 "syntax errors in various INSERT statement combinations" 
+
+F:\>rem
+
+F:\>db "insert into test ( 'not_null', 1, '11' )" 
+dbfile.bin size = 372
+INSERT statement
+values keyword missing
+
+Error in the string: (
+rc=-199
+
+F:\>db "insert into test values ( 'not_null', 1 )" 
+dbfile.bin size = 372
+INSERT statement
+Column Count doesn't match schema
+
+Error in the string: )
+rc=-191
+
+F:\>rem ------------------------------------------------------------------------------------------ 
+
+F:\>rem #27 "syntax errors in various UPDATE statement combinations" 
+
+F:\>rem
+
+F:\>db "update test set col5 = NULL where col2 = 1" 
+dbfile.bin size = 372
+UPDATE TABLE statement
+
+Error in the string: NULL
+rc=-393
+
+F:\>db "update test5 set col3 = NULL where col2 = 1" 
+dbfile.bin size = 372
+UPDATE TABLE statement
+
+Error in the string: test5
+rc=-397
+
+F:\>rem ------------------------------------------------------------------------------------------ 
+
+F:\>rem #28 "syntax errors in various SELECT statement combinations" 
+
+F:\>rem
+
+F:\>db "select col1, * from test" 
+dbfile.bin size = 372
+SELECT statement
+
+Error in the string: *
+rc=-395
+
+F:\>db "select count(*) from test order by col2" 
+dbfile.bin size = 372
+SELECT statement
+
+Error in the string: *
+rc=-395
+
+F:\>db "select col1, count(col2) from test" 
+dbfile.bin size = 372
+SELECT statement
+
+Error in the string: count
+rc=-395
+
+F:\>db "select col5 from test" 
+dbfile.bin size = 372
+SELECT statement
+
+Error in the string: col5
+rc=-393
+
+F:\>rem ------------------------------------------------------------------------------------------ 
+
+F:\>rem #29 "data type mismatch" 
+
+F:\>rem
+
+F:\>db "insert into test values ( 'not_null', 1, 'string' )" 
+dbfile.bin size = 372
+INSERT statement
+Column should be an integer
+
+Error in the string: string
+rc=-194
+
+F:\>rem ------------------------------------------------------------------------------------------ 
+
+F:\>rem #30 NOT NULL on inserts 
+
+F:\>rem
+
+F:\>db "insert into test values ( 'not_null', 1, NULL )" 
+dbfile.bin size = 372
+INSERT statement
+Cannot insert NULL
+
+Error in the string: NULL
+rc=-192
+
+F:\>rem ------------------------------------------------------------------------------------------ 
+
+F:\>rem #31 NOT NULL updates 
+
+F:\>rem
+
+F:\>db "update test set col3 = NULL where col2 = 1" 
+dbfile.bin size = 372
+UPDATE TABLE statement
+
+Error in the string: NULL
+rc=-192
+
+F:\>rem ------------------------------------------------------------------------------------------ 
+
+F:\>rem #32 Catch “data type mismatch” errors on WHERE clauses of update, delete, select. 
+
+F:\>rem
+
+F:\>db "update test set col3 = 'Frank' where col2 = 2" 
+dbfile.bin size = 372
+UPDATE TABLE statement
+1 rows updated
+
+F:\>db "delete from test where col2 = 'two'" 
+dbfile.bin size = 372
+DELETE statement
+
+Error in the string: two
+rc=-189
+
+F:\>db "select * from test where col1 > 200" 
+dbfile.bin size = 372
+SELECT statement
++----------------+----------------+----------------+
+|col1            |col2            |col3            |
++----------------+----------------+----------------+
++----------------+----------------+----------------+
+0 rows selected
+
+F:\>rem ------------------------------------------------------------------------------------------ 
+
+F:\>rem #33. “invalid data value” errors. 
+
+F:\>rem
+
+F:\>db "update test set col1 = 'stringlargerthan10' where col2 = 2" 
+dbfile.bin size = 372
+UPDATE TABLE statement
+1 rows updated
+
+F:\>rem ------------------------------------------------------------------------------------------ 
+
+F:\>rem #34. "invalid relational operator" & "invalid aggregate function parameter" errors 
+
+F:\>rem
+
+F:\>db "select * from test where col2 not = 100" 
+dbfile.bin size = 372
+SELECT statement
++----------------+----------------+----------------+
+|col1            |col2            |col3            |
++----------------+----------------+----------------+
+|one             |               1|              11|
+|stringlarg    |               2|               0|
++----------------+----------------+----------------+
+2 rows selected
+
+F:\>db "select AVG(col1) from test" 
+dbfile.bin size = 372
+SELECT statement
++----------------+
+|Average         |
++----------------+
+
+Error in the string: test
+rc=-199
+
+F:\>rem ------------------------------------------------------------------------------------------ 
+
+F:\>rem End of test1.bat 

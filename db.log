@@ -1,0 +1,8 @@
+20160516003228 "create table tab1(name char(16), quizzes int, midterm int, final int)"
+20160516003229 "create table tab2(college char(20), zipcode char(5), rank int)"
+20160516003229 "insert into tab1 values('Siu', 11, 80, 560)"
+20160516003229 "insert into tab1 values('Frank', 22, 100, 700)"
+20160516003229 "insert into tab1 values('Jordon', 33, 75, 525)"
+20160516003229 "insert into tab2 values('UCLA', '11111', 3)"
+20160516003229 "insert into tab2 values('SJSU', '22222', 10)"
+20160516003230 "insert into tab2 values('Stanford', '33333', 2)"

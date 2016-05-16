@@ -1,0 +1,1129 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"tok",
+				"tok_value"
+			],
+			[
+				"invali",
+				"INVALID"
+			],
+			[
+				"TOK",
+				"tok_value"
+			],
+			[
+				"tk",
+				"tok_value"
+			],
+			[
+				"sem_select_",
+				"sem_select_aggregate"
+			],
+			[
+				"col",
+				"col_id"
+			],
+			[
+				"has",
+				"has_star"
+			],
+			[
+				"num",
+				"num_columns"
+			],
+			[
+				"not",
+				"not_null"
+			],
+			[
+				"tok_",
+				"tok_value"
+			],
+			[
+				"si",
+				"size"
+			],
+			[
+				"val",
+				"value"
+			],
+			[
+				"K_U",
+				"K_VALUES"
+			],
+			[
+				"column",
+				"column_name"
+			],
+			[
+				"current",
+				"current_position"
+			],
+			[
+				"int",
+				"int_write"
+			],
+			[
+				"file",
+				"file_size"
+			],
+			[
+				"rec",
+				"record_offset"
+			],
+			[
+				"table_fi",
+				"table_file_header"
+			],
+			[
+				"curr",
+				"current_offset"
+			],
+			[
+				"row_lo",
+				"row_location"
+			],
+			[
+				"c",
+				"column_entry"
+			],
+			[
+				"delete_",
+				"delete_where"
+			],
+			[
+				"temp",
+				"temp_num"
+			],
+			[
+				"len",
+				"length"
+			],
+			[
+				"size",
+				"sizeof"
+			],
+			[
+				"curre",
+				"current_position"
+			],
+			[
+				"record_",
+				"record_offset"
+			],
+			[
+				"bye",
+				"bytes_added"
+			],
+			[
+				"row",
+				"row_length"
+			],
+			[
+				"inser",
+				"insert_done"
+			],
+			[
+				"by",
+				"byes_added"
+			],
+			[
+				"table",
+				"table_file_header"
+			],
+			[
+				"get",
+				"getDataTable"
+			],
+			[
+				"mem",
+				"memcpy"
+			],
+			[
+				"ins",
+				"insertIntoTab"
+			],
+			[
+				"tab",
+				"tab_entry"
+			],
+			[
+				"insert",
+				"insertIntoTabFile"
+			],
+			[
+				"re",
+				"record_offset"
+			],
+			[
+				"nu",
+				"num_records"
+			],
+			[
+				"fil",
+				"file_header"
+			],
+			[
+				"ta",
+				"table_size"
+			],
+			[
+				"record",
+				"record_size"
+			],
+			[
+				"cre",
+				"create_file"
+			],
+			[
+				"UP",
+				"UPDATED_ON"
+			],
+			[
+				"CRE",
+				"CREATED_ON"
+			],
+			[
+				"CREATED",
+				"CREATED_BY"
+			],
+			[
+				"CODE_",
+				"CODE_ID"
+			],
+			[
+				"CO",
+				"CODE_ID"
+			],
+			[
+				"T",
+				"T_CODES"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "db.h",
+			"settings":
+			{
+				"buffer_size": 7076,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "db.cpp",
+			"settings":
+			{
+				"buffer_size": 74916,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "1) A AND B is true = C\nCannot assume order of table order is the same so can do either\n\n2) D Triggers can be built on top of views\n\n3) C can't use sub command - you can\n\n4) from book\n\n5) B UDF cannot return a full table\n\n6) B not  restirction - cannot speifcytables or views that contain XML columns as table to DFS\n\n7) Which object cannot refer transition tables\n	A) User defined type\n		- Jusst a type def\n	The rest are actual code\n\n8) D All True\n	Can execute SQL in SP\n	Can usu Call to call SP\n	Improves performances reduce data being passed\n\n9) Which is not true about SP's\n	C) IT CANT be used to acces\n\n10) What is not true about between external SP's and SP\n\n	B) The external SQL SP and other EXP use the same Error hanndling <- NOT TRUE\n		(External SQL needs error messages to be formatted via code like Catching in Java)\n\n11) F - Disadtavantage of hash files is the overflow\n\n12) F - Hash tables cannot be excellting for range queries\n\n13) F - Becase when you delete you might need to merge brances of the trees such as uncles and aunts\n\n14) T - Table scan is the default action to read all rows in a table\n\n15) F - Set and UNION is true\n	Bag union you keep everytig\n\n16) T- \n\n17) F - Redo loggin you save the new vale\n	 - Undo logins keeps the old value\n\n18) T \n\n19 Chapter 14 - Bit map index\n\n20) TPMMS - Two paced Multiway merge sort  - ANY pass for phase 1 just not Bubble Sort like quick/insertion/merge\n\nALl slides + 4 chapters in the book - 13 14 15 17",
+			"file": "/home/viviturtle/Documents/CS157B/Quiz2_Notes.txt",
+			"file_size": 1415,
+			"file_write_time": 131075728098926552,
+			"settings":
+			{
+				"buffer_size": 1466,
+				"line_ending": "Unix",
+				"name": "1) A AND B is true = C"
+			}
+		},
+		{
+			"contents": "12 Sl",
+			"settings":
+			{
+				"buffer_size": 5,
+				"line_ending": "Unix",
+				"name": "12 Sl"
+			}
+		},
+		{
+			"contents": "00000000:  b801 0000 2000 0000 0d00 0000 1800 0000 0000 0000 0000 0000  :.... ...................\n00000018:  0373 6975 0000 0000 0000 0000 0001 4d04 e001 0000 0450 0000  :.siu..........M......P..\n00000030:  0004 3002 0000 0000 0546 7261 6e6b 0000 0000 0000 0001 4d04  :..0......Frank........M.\n00000048:  5802 0000 0464 0000 0004 bc02 0000 0000 064a 6f72 646f 6e00  :X....d...........Jordon.\n00000060:  0000 0000 0001 4d04 c201 0000 044b 0000 0004 0d02 0000 0000  :......M......K..........\n00000078:  044a 6566 6600 0000 0000 0000 0001 4d04 c701 0000 043c 0000  :.Jeff.........M......<..\n00000090:  0004 0302 0000 0000 0459 696e 6700 0000 0000 0000 0001 4604  :.........Ying.........F.\n000000a8:  1c02 0000 0455 0000 0004 7102 0000 0000 0544 6176 6964 0000  :.....U....q......David..\n000000c0:  0000 0000 0001 4d04 2602 0000 0453 0000 0004 7902 0000 0000  :......M.&....S....y.....\n000000d8:  0465 756e 6100 0000 0000 0000 0001 4604 cc01 0000 044b 0000  :.euna.........F......K..\n000000f0:  0004 1702 0000 0000 0656 6963 746f 7200 0000 0000 0001 4d04  :.........Victor.......M.\n00000108:  db01 0000 043c 0000 0004 1702 0000 0000 0442 6164 3100 0000  :.....<...........Bad1...\n00000120:  0000 0000 0001 4604 c800 0000 0000 0000 0004 dc00 0000 0000  :......F.................\n00000138:  084c 696e 6177 6174 6900 0000 0001 4604 ea01 0000 0456 0000  :.Linawati.....F......V..\n00000150:  0004 4002 0000 0000 0442 6164 3200 0000 0000 0000 0001 4604  :..@......Bad2.........F.\n00000168:  d200 0000 0000 0000 0004 e100 0000 0000 0753 7465 7068 656e  :.................Stephen\n00000180:  0000 0000 0001 4d04 0802 0000 044c 0000 0004 5402 0000 0000  :......M......L....T.....\n00000198:  0950 6172 6963 6861 7274 0000 0001 4604 c201 0000 044c 0000  :.Parichart....F......L..\n000001b0:  0004 0e02 0000 0000                                          :........",
+			"settings":
+			{
+				"buffer_size": 1845,
+				"line_ending": "Unix",
+				"name": "class.tab.hex",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"file": "test.bat",
+			"settings":
+			{
+				"buffer_size": 903,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "00000000:  a800 0000 1800 0000 0600 0000 1800 0000 0000 0000 0000 0000  :........................\n00000018:  036f 6e65 0000 0000 0000 0004 0100 0000 040b 0000 0000 0000  :.one....................\n00000030:  0374 776f 0000 0000 0000 0004 0200 0000 0416 0000 0000 0000  :.two....................\n00000048:  0574 6872 6565 0000 0000 0004 0300 0000 0421 0000 0000 0000  :.three...........!......\n00000060:  0574 6872 6565 0000 0000 0004 0300 0000 0403 0000 0000 0000  :.three..................\n00000078:  0000 0000 0000 0000 0000 0000 0000 0000 0403 0000 0000 0000  :........................\n00000090:  0474 6573 7400 0000 0000 0004 0400 0000 0403 0000 0000 0000  :.test...................",
+			"settings":
+			{
+				"buffer_size": 685,
+				"line_ending": "Unix",
+				"name": "test.tab.hex",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "rem db \"delete from class wherel student = 'Bad3'\"\nrem db \"select * from class\"\nrem rem ------------------------------------------------------------------------------------------\nrem rem #06 Delete when 0 row matched\nrem rem\nrem db \"delete from class where student = 'Nobody'\"\nrem db \"select * from class\"\nrem rem ------------------------------------------------------------------------------------------\nrem rem #07 Multi-row delete, bad1 and bad2 should be deleted\nrem rem\nrem db \"delete from class where total < 250\"\nrem db \"select * from class\"\nrem rem ------------------------------------------------------------------------------------------\nrem rem #08 Single row update\nrem rem\nrem db \"update class set exams = 600 where student = 'David'\"\nrem db \"select * from class\"\nrem rem ------------------------------------------------------------------------------------------\nrem rem #09 Update with no row matched\nrem rem\nrem db \"update class set exams = 999 where student = 'Nobody'\"\nrem rem ------------------------------------------------------------------------------------------\nrem rem #10 Multi-row updates,  Jordan & Jeff are now 'F'\nrem rem\nrem db \"update class set gender = 'F' where total < 526\nrem db \"select * from class\"\nrem rem ------------------------------------------------------------------------------------------\nrem rem #11 Single column select without WHERE clause\nrem rem\nrem db \"select student from class\nrem rem ------------------------------------------------------------------------------------------\nrem rem #12 Multi-column select without WHERE clause\nrem rem\nrem db \"select total, student from class\nrem rem ------------------------------------------------------------------------------------------\nrem rem #13 Select with WHERE clause with a single condition\nrem rem\nrem db \"select * from class where total > 600\"\nrem rem ------------------------------------------------------------------------------------------\nrem rem #14 Select with where clause and AND keyword\nrem rem\nrem db \"select * from class where total > 570 and gender = 'M'\"\nrem rem ------------------------------------------------------------------------------------------\nrem rem #15 Select with where clause and OR keyword\nrem rem\nrem db \"select * from class where total > 570 or gender = 'F'\"\nrem db \"select * from class where total > 600\"\nrem rem ------------------------------------------------------------------------------------------\nrem rem #16 Select with ORDER BY clause\nrem rem\nrem db \"select student from class order by student\"\nrem db \"select * from class order by total desc\"\nrem rem ------------------------------------------------------------------------------------------\nrem rem #17 Select with WHERE and ORDER BY clauses\nrem rem\nrem db \"select * from class where total > 570 order by total\"\nrem rem ------------------------------------------------------------------------------------------\nrem rem #18 Select SUM()\nrem rem\nrem db \"select SUM(quiz) from class\"\nrem rem ------------------------------------------------------------------------------------------\nrem rem #19 Select SUM() with where clause\nrem rem\nrem db \"select SUM(total) from class where total > 600\"\nrem rem ------------------------------------------------------------------------------------------\nrem rem #20 Select AVG()\nrem rem\nrem db \"select AVG(quiz) from class\"\nrem rem ------------------------------------------------------------------------------------------\nrem rem #21 Select AVG() with where clause\nrem rem\nrem db \"select AVG(total) from class where total > 600\"\nrem rem ------------------------------------------------------------------------------------------\nrem rem #22 Select COUNT()\nrem rem\nrem db \"select COUNT(*) from class\"\nrem rem ------------------------------------------------------------------------------------------\nrem rem #23 Select COUNT() with where clause\nrem rem\nrem db \"select COUNT(total) from class where total > 600\"\nrem rem ------------------------------------------------------------------------------------------\nrem rem #24 Test SUM(), AVG() when there are NULLs.\nrem rem\nrem db \"select * from class\"\nrem db \"update class set exams = NULL where student = 'David'\" \nrem db \"update class set quiz = NULL where student = 'Stephen'\" \nrem db \"select avg(exams) from class\"\nrem db \"select sum(quiz) from class\"\nrem rem ------------------------------------------------------------------------------------------\nrem rem #25 Test COUNT(*), COUNT(Quiz_Total) when there are NULLs.\nrem rem\nrem db \"select COUNT(*) from class\"\nrem db \"select COUNT(exams) from class\"\nrem rem ==========================================================================================\nrem rem Error Testing Section\nrem rem ------------------------------------------------------------------------------------------\nrem rem Setup the table\nrem db \"create table test (col1 char(10), col2 int, col3 int not null)\"\nrem db \"insert into test values ( 'one', 1, 11 )\"\nrem db \"insert into test values ( 'two', 2, 22 )\"\nrem db \"select * from test\"\nrem rem ------------------------------------------------------------------------------------------\nrem rem #26 \"syntax errors in various INSERT statement combinations\"\nrem rem\nrem db \"insert into test ( 'not_null', 1, '11' )\"\nrem db \"insert into test values ( 'not_null', 1 )\"\nrem rem ------------------------------------------------------------------------------------------\nrem rem #27 \"syntax errors in various UPDATE statement combinations\"\nrem rem\nrem db \"update test set col5 = NULL where col2 = 1\"\nrem db \"update test5 set col3 = NULL where col2 = 1\"\nrem rem ------------------------------------------------------------------------------------------\nrem rem #28 \"syntax errors in various SELECT statement combinations\"\nrem rem\nrem db \"select col1, * from test\"\nrem db \"select count(*) from test order by col2\"\nrem db \"select col1, count(col2) from test\"\nrem db \"select col5 from test\"\nrem rem ------------------------------------------------------------------------------------------\nrem rem #29 \"data type mismatch\"\nrem rem\nrem db \"insert into test values ( 'not_null', 1, 'string' )\"\nrem rem ------------------------------------------------------------------------------------------\nrem rem #30 NOT NULL on inserts\nrem rem\nrem db \"insert into test values ( 'not_null', 1, NULL )\"\nrem rem ------------------------------------------------------------------------------------------\nrem rem #31 NOT NULL updates\nrem rem\nrem db \"update test set col3 = NULL where col2 = 1\"\nrem rem ------------------------------------------------------------------------------------------\nrem rem #32 Catch “data type mismatch” errors on WHERE clauses of update, delete, select.\nrem rem\nrem db \"update test set col3 = 'Frank' where col2 = 2\"\nrem db \"delete from test where col2 = 'two'\"\nrem db \"select * from test where col1 > 200\"\nrem rem ------------------------------------------------------------------------------------------\nrem rem #33. “invalid data value” errors.\nrem rem\nrem db \"update test set col1 = 'stringlargerthan10' where col2 = 2\"\nrem rem ------------------------------------------------------------------------------------------\nrem rem #34. \"invalid relational operator\" & \"invalid aggregate function parameter\" errors\nrem rem\nrem db \"select * from test where col2 not = 100\"\nrem db \"select AVG(col1) from test\"\nrem rem ------------------------------------------------------------------------------------------\nrem rem End of test1.bat\n\n",
+			"settings":
+			{
+				"buffer_size": 7476,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"hex",
+				"Hex Viewer: Toggle Hex View"
+			],
+			[
+				"he",
+				"Hex Viewer: Toggle Hex View"
+			],
+			[
+				"ehex",
+				"Set Syntax: Hex"
+			],
+			[
+				"ehx",
+				"Hex Viewer: Toggle Hex View"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				" Syntax: C",
+				"Set Syntax: C++"
+			],
+			[
+				"Set",
+				"Set Syntax: C++"
+			],
+			[
+				"sql",
+				"Set Syntax: SQL"
+			],
+			[
+				"git",
+				"Git: Pull"
+			],
+			[
+				"COBO",
+				"Set Syntax: COBOL"
+			],
+			[
+				"bash",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"git pus",
+				"Git: Push"
+			],
+			[
+				"Git commit",
+				"Git: Commit"
+			],
+			[
+				"node",
+				"Nodejs::Run::Current File"
+			],
+			[
+				"Python",
+				"Set Syntax: Python"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"CO",
+				"Set Syntax: COBOL"
+			],
+			[
+				"Co",
+				"Set Syntax: COBOL"
+			],
+			[
+				"Cobo",
+				"Set Syntax: COBOL"
+			],
+			[
+				"co",
+				"Set Syntax: COBOL"
+			],
+			[
+				"cobo",
+				"Set Syntax: COBOL"
+			],
+			[
+				"Ins",
+				"Package Control: Install Package"
+			],
+			[
+				"pyhon",
+				"Set Syntax: Python"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"Php",
+				"Set Syntax: PHP"
+			],
+			[
+				"SQL",
+				"Set Syntax: SQL"
+			],
+			[
+				"python",
+				"Set Syntax: Python"
+			],
+			[
+				"git dig",
+				"Git: Diff Current File (Ignore Whitespace)"
+			],
+			[
+				"Git pu",
+				"Git: Pull"
+			],
+			[
+				"Git",
+				"Github: Pull Requests"
+			],
+			[
+				"GIt",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"pak",
+				"Package Control: Remove Package"
+			],
+			[
+				"PHP",
+				"Set Syntax: PHP"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 188.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/viviturtle/Documents/CS157B/Project",
+		"/home/viviturtle/Documents/CS157B/Project/Output"
+	],
+	"file_history":
+	[
+		"/home/viviturtle/db.cpp",
+		"/home/viviturtle/Documents/CS157B/Project/test2.bat",
+		"/home/viviturtle/Documents/CS157B/Project/class.tab",
+		"/home/viviturtle/Documents/CS157B/Project/Output/test.tab",
+		"/home/viviturtle/Documents/CS157B/Project/test.bat",
+		"/home/viviturtle/Documents/CS157B/Project/Output/test1.bat",
+		"/home/viviturtle/Documents/CS157B/Project/Look.tab",
+		"/home/viviturtle/Documents/CS157B/Project/test.tab",
+		"/home/viviturtle/Documents/CS157B/Project/db.cpp",
+		"/home/viviturtle/Documents/CS157B/Project/Output/test1.out",
+		"/home/viviturtle/Documents/CS157B/Project/test3.tab",
+		"/home/viviturtle/Documents/CS157B/Project/test2.tab",
+		"/home/viviturtle/.bashrc",
+		"/home/viviturtle/Documents/CS157B/Project/dbfile.bin",
+		"/home/viviturtle/GitHub/Personal/OverTheWire/bandit/login",
+		"/home/viviturtle/Documents/CS157B/Project/p1p1/test2.tab",
+		"/home/viviturtle/Documents/CS157B/Project/test4.tab",
+		"/home/viviturtle/Documents/CS157B/Project/default.tab",
+		"/home/viviturtle/Documents/CS157B/Project/test6.tab",
+		"/home/viviturtle/Documents/CS157B/Project/Notes",
+		"/home/viviturtle/Documents/CS157B/Project/test.cpp",
+		"/home/viviturtle/Documents/CS157B/Project/students.tab",
+		"/home/viviturtle/Documents/CS157B/Project/test5.tab",
+		"/home/viviturtle/Documents/CS157B/Project/test23.tab",
+		"/home/viviturtle/Documents/CS157B/Project/ouput.tab",
+		"/home/viviturtle/Documents/CS157B/Project/db.zip",
+		"/home/viviturtle/GitHub/Speed-Rider/mysql/DataManipulation.sql",
+		"/home/viviturtle/GitHub/Speed-Rider/mysql/DataControl.sql",
+		"/home/viviturtle/GitHub/Speed-Rider/mysql/DataDefinitionLanguage.sql",
+		"/etc/mysql/my.cnf",
+		"/home/viviturtle/GitHub/Speed-Rider/mysql/Account.txt",
+		"/home/viviturtle/GitHub/Speed-Rider/mysql/Codes.txt",
+		"/home/viviturtle/GitHub/Speed-Rider/.htaccess",
+		"/home/viviturtle/BugCrowd/99designs/subs.txt",
+		"/home/viviturtle/Documents/CS157B/Lab3/ACCOUNT",
+		"/home/viviturtle/Documents/CS157B/Lab 3 JCL.zip",
+		"/home/viviturtle/GitHub/AmbientLight/ambient-new.js",
+		"/home/viviturtle/GitHub/AmbientLight/relay_test.js",
+		"/home/viviturtle/GitHub/AmbientLight/Relay_real.js",
+		"/home/viviturtle/Documents/Lists/Keys.txt",
+		"/home/viviturtle/HDD/Virtualbox Vms/Windows 10/Windows 10.vbox",
+		"/home/viviturtle/IoT Workshop/node_modules/tessel-code/wifi/node_modules/climate-si7020/examples/getClimateDateFromAercloud.js",
+		"/home/viviturtle/GitHub/AmbientLight/relay.js",
+		"/home/viviturtle/GitHub/AmbientLight/node_modules/relay/Relay_real.js",
+		"/home/viviturtle/GitHub/AmbientLight/script.py",
+		"/home/viviturtle/GitHub/AmbientLight/node_modules/ambient-attx4/examples/ambient-new.js",
+		"/home/viviturtle/GitHub/AmbientLight/node_modules/ambient-attx4/examples/ambient.js",
+		"/home/viviturtle/IoT Workshop/blinky.py",
+		"/home/viviturtle/IoT Workshop/node_modules/tessel-code/blinky.js",
+		"/home/viviturtle/IoT Workshop/node_modules/tessel-code/wifi/node_modules/climate-si7020/examples/file.csv",
+		"/home/viviturtle/GitHub/AmbientLight/node_modules/relay/package.json",
+		"/home/viviturtle/IoT Workshop/node_modules/tessel-code/wifi/node_modules/climate-si7020/examples/file",
+		"/mnt/HDD/InSync/Documents/CS157B/Lab3/Lab3JCL/RUN",
+		"/mnt/HDD/InSync/Documents/CS157B/Lab2/OPACCT",
+		"/mnt/HDD/InSync/Documents/CS157B/Lab2/OPACCT2",
+		"/mnt/HDD/InSync/Documents/CS157B/Lab3/Lab3JCL/BIND",
+		"/mnt/HDD/InSync/Documents/CS157B/Lab3/Lab3JCL/LINKEDIT",
+		"/home/viviturtle/Lab3/CUSTOMER",
+		"/home/viviturtle/Lab3/BRANCH",
+		"/home/viviturtle/Lab3/ACCOUNT",
+		"/home/viviturtle/Documents/CS157B/Lab2/OPACCT",
+		"/home/viviturtle/Documents/CS157B/Lab3/Lab3JCL/LINKEDIT",
+		"/home/viviturtle/Documents/CS157B/Lab2/OPACCT2",
+		"/home/viviturtle/IoT Workshop/node_modules/tessel-code/wifi/node_modules/climate-si7020/examples/climate.js",
+		"/home/viviturtle/IoT Workshop/tessel-code/wifi.js",
+		"/home/viviturtle/IoT Workshop/script.py",
+		"/var/www/html/index.html",
+		"/var/www/html/Master.html",
+		"/etc/udev/rules.d/85-tessel.rules",
+		"/home/viviturtle/npm-debug.log",
+		"/home/viviturtle/etc/udev/rules.d/85-tessel.rules",
+		"/home/viviturtle/IoT Workshop/script2.py",
+		"/var/www/html/Site1.Master",
+		"/home/viviturtle/GitHub/SJSU-InfoSec-Club-Website/Site1.Master",
+		"/home/viviturtle/.ssh/id_rsa",
+		"/home/viviturtle/.ssh/id_rsa.pub",
+		"/home/viviturtle/ghpages/publishconf.py",
+		"/home/viviturtle/Speed-Rider/robots.txt",
+		"/mnt/HDD/InSync/Documents/CS157B/Lab1/TEST",
+		"/mnt/HDD/Downloads/db.cpp",
+		"/home/viviturtle/Lab2/OPACCT",
+		"/home/viviturtle/test.py",
+		"/home/viviturtle/ghpages/pelicanconf.py",
+		"/home/viviturtle/ghpages/output/Test.MD",
+		"/home/viviturtle/BKPctf2016/DES/des-ofb.py",
+		"/home/viviturtle/Codes2.txt",
+		"/home/viviturtle/Codes",
+		"/home/viviturtle/TEST",
+		"/home/viviturtle/BKPctf2016/release/ganbatte.py",
+		"/home/viviturtle/gala-turtle-face-up-close.bmp",
+		"/home/viviturtle/BKPctf2016/release/requirements.txt",
+		"/home/viviturtle/BKPctf2016/release/static/questions.js",
+		"/etc/fstab",
+		"/bin/git_commits.sh",
+		"/home/viviturtle/.local/share/applications/Burp.desktop",
+		"/home/viviturtle/.local/share/applications/Eclipse.desktop",
+		"/home/viviturtle/git_commits",
+		"/home/viviturtle/git_commits.sh",
+		"/mnt/HDD/Downloads/Burp.desktop"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 108.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"99",
+			"INVALID",
+			"d|",
+			"|%16d|",
+			"cur",
+			"%-",
+			"s",
+			"size_array",
+			"RIGHT",
+			"rc=-397",
+			"columns_2_print",
+			"MISSING",
+			"calloc",
+			"printf(\"%d",
+			"cur",
+			"file_name",
+			"getDataTable",
+			"select_all",
+			"INVALID_STATEMENT",
+			"199",
+			"MISSING_VALUES",
+			"select_where",
+			"sem_select_columns_data",
+			"tab_entry->num_columns",
+			"row_location_type",
+			"current_position",
+			"tabname",
+			"1526",
+			"len",
+			"column_entry",
+			"t_list",
+			" &&",
+			"&&",
+			"!",
+			"AND",
+			"select_all",
+			"getRecordOffSet",
+			"t_list",
+			"10",
+			"cur",
+			"i",
+			"10",
+			"int_write",
+			"99",
+			"MUST_COMPARE_WITH_INT_OR_STRING",
+			"int",
+			"start_of_row",
+			"row_location_type->type",
+			"next",
+			"cur = cur->next",
+			"cur = cur->next;",
+			"cur",
+			"cur->tok_value = INVALID;",
+			"rc =",
+			"rc = ",
+			"rc =",
+			"test",
+			"delete",
+			"Obtained",
+			"atoi(",
+			"row_length",
+			"new_file",
+			"tfh",
+			"tbh",
+			"931",
+			"string_row_to_add",
+			"current_position",
+			"calloc",
+			"file_name",
+			"fhandle",
+			"tpd_entry",
+			"18",
+			"187",
+			"18",
+			"fhandle",
+			"19",
+			"tabname",
+			"row_loc_type",
+			":",
+			");\n",
+			"create_file",
+			"file_name",
+			"SELECT",
+			"row_length",
+			"memcp",
+			" sizeof(int);",
+			"sizeof(int);",
+			"row_length",
+			"is_int",
+			"temp2",
+			"calloc",
+			"row_string",
+			"calloc",
+			"//",
+			"row_string",
+			"calloc",
+			"fprintf",
+			"tab_entry",
+			"tbh->record_size",
+			"column_entry->col_id",
+			".value",
+			"record_size",
+			"tab_entry",
+			"col_type",
+			"i",
+			"test",
+			"\");",
+			"INSERT statement",
+			"tab_entry",
+			"table_name",
+			"tbh",
+			"table_name",
+			"file_name",
+			"tabname",
+			"column_entry",
+			"tab_entry",
+			"fhandle",
+			"extension",
+			"file_name",
+			"table_name",
+			"tpd_entry",
+			"invalid statement",
+			"INVALID_TABLE_NAME",
+			"sem_list_schema",
+			"insertColumns",
+			",cur->tok_string",
+			"Error in the string: %s\\n",
+			"nError in the string: %s\\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"bytes_added",
+			"insertColumns",
+			"insertIntoTable",
+			"in",
+			"INT",
+			"Speed_Rider",
+			"AUTO_INCREMENT",
+			"T_USER",
+			"Speed-Rider",
+			"https://api.aercloud.aeris.com/v1/",
+			"45275b85-eb01-11e5-9830-e9a4e7689ec1",
+			"16088",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "db.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7076,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3746,
+								3746
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2390.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "db.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 74916,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								45816,
+								45816
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/home/viviturtle/Documents/CS157B/Quiz2_Notes.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1466,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1466,
+								1466
+							]
+						],
+						"settings":
+						{
+							"auto_name": "1) A AND B is true = C",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1122.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5,
+								5
+							]
+						],
+						"settings":
+						{
+							"auto_name": "12 Sl",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1845,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								11,
+								11
+							]
+						],
+						"settings":
+						{
+							"hex_no_auto_open": true,
+							"hex_viewer_actual_bytes": 24,
+							"hex_viewer_bits": 16,
+							"hex_viewer_bytes": 24,
+							"hex_viewer_fake": false,
+							"hex_viewer_file_name": "/home/viviturtle/Documents/CS157B/Project/class.tab",
+							"hex_viewer_starting_address": 0,
+							"hex_viewer_temp_file": "/tmp/tmp8a5krb.hex",
+							"syntax": "Packages/HexViewer/Hex.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "test.bat",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 903,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								900,
+								900
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Batch File/Batch File.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 685,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								11,
+								11
+							]
+						],
+						"settings":
+						{
+							"hex_no_auto_open": true,
+							"hex_viewer_actual_bytes": 24,
+							"hex_viewer_bits": 16,
+							"hex_viewer_bytes": 24,
+							"hex_viewer_fake": false,
+							"hex_viewer_file_name": "/home/viviturtle/Documents/CS157B/Project/test.tab",
+							"hex_viewer_starting_address": 0,
+							"hex_viewer_temp_file": "/tmp/tmp2s9ati.hex",
+							"syntax": "Packages/HexViewer/Hex.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7476,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5207,
+								5207
+							],
+							[
+								7476,
+								7476
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Batch File/Batch File.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 154.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 154.0
+	},
+	"output.hex_viewer_inspector":
+	{
+		"height": 154.0
+	},
+	"output.nodejs":
+	{
+		"height": 34.0
+	},
+	"pinned_build_system": "",
+	"project": "EmbeddedSQL.sublime-project",
+	"replace":
+	{
+		"height": 74.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"acc",
+				"Lab3/ACCOUNT"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/GitHub/Speed-Rider/php/Speed-Rider_Local.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"drop_tpd_from_list"
+			],
+			[
+				"drop",
+				"drop_tpd_from_list"
+			],
+			[
+				"crea",
+				"sem_create_table"
+			],
+			[
+				"cre",
+				"sem_create_table"
+			]
+		],
+		"width": 392.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 218.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

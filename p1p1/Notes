@@ -1,0 +1,24 @@
+CREATE TABLE T1(gender char(1), name char(10), age int)
+
+Table Header -> Length(Char) -> 1 -> length(char) -> 10 -> length(int) -> 4 -> Round to a 4 byte boudary
+Length is the ACTUAL Length NOT the max legnth
+
+----------------------------
+Insert ...
+Select *
+
+
+Strcpy (Continues until reaches null terminator) 
+DO NOT USE STRING FUNCTIONS: USE A SPECIFIC NUMBER OF BYTES WITHOUT NULL
+
+WILL WORK:
+STRNCPY()
+MEMCPY()
+
+--------------------------------
+DONT SAVE INTERFERS AS A STRING
+USE MEMCPY FOR INTERGERS TO TAKE IS AS A WHOLE (STORED AS LITTLE ENDIAN)	
+
+------------------
+
+BAT FILE IS LIKE A BASH SCRIPT LIST OF ALL UR CMMANDS
